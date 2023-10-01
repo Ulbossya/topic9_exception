@@ -1,0 +1,174 @@
+//copypast
+// try { 
+//    // code that might throw an exception 
+// }  
+// on Exception1 { 
+//    // code for handling exception 
+// }  
+// catch Exception2 { 
+//    // code for handling exception 
+// } 
+
+
+// main() { 
+//    int x = 12; 
+//    int y = 0; 
+//    int res;  
+   
+//    try {
+//       res = x ~/ y; 
+//    } 
+//    on IntegerDivisionByZeroException { 
+//       print('Cannot divide by zero'); 
+//    } 
+// } 
+
+
+// main() { 
+//    int x = 12; 
+//    int y = 0; 
+//    int res;  
+   
+//    try {  
+//       res = x ~/ y; 
+//    }  
+//    catch(e) { 
+//       print(e); 
+//    } 
+// } 
+
+
+// main() { 
+//    int x = 12; 
+//    int y = 0; 
+//    int res;  
+   
+//    try { 
+//       res = x ~/ y; 
+//    }  
+//    on IntegerDivisionByZeroException catch(e) { 
+//       print(e); 
+//    } 
+// } 
+
+
+// try { 
+//    // code that might throw an exception 
+// }  
+// on Exception1 { 
+//    // exception handling code 
+// }  
+// catch Exception2 { 
+//    //  exception handling 
+// }  
+// finally { 
+//    // code that should always execute; irrespective of the exception 
+// }
+
+
+// main() { 
+//    int x = 12; 
+//    int y = 0; 
+//    int res;  
+   
+//    try { 
+//       res = x ~/ y; 
+//    } 
+//    on IntegerDivisionByZeroException { 
+//       print('Cannot divide by zero'); 
+//    } 
+//    finally { 
+//       print('Finally block executed'); 
+//    } 
+// }
+
+// main() { 
+//    try { 
+//       test_age(-2); 
+//    } 
+//    catch(e) { 
+//       print('Age cannot be negative'); 
+//    } 
+// }  
+// void test_age(int age) { 
+//    if(age<0) { 
+//       throw new FormatException(); 
+//    } 
+// }
+
+
+// class AmtException implements Exception { 
+//    String errMsg() => 'Amount should be greater than zero'; 
+// }  
+// void main() { 
+//    try { 
+//       withdraw_amt(-1); 
+//    } 
+//    catch(e) { 
+//       print(e.errMsg()); 
+//    }  
+//    finally { 
+//       print('Ending requested operation.....'); 
+//    } 
+// }  
+// void withdraw_amt(int amt) { 
+//    if (amt <= 0) { 
+//       throw new AmtException(); 
+//    } 
+// }
+
+
+// Create CustomException to check:
+// - age is more than 18, otherwise return “you are teenager yet”
+// void main() {
+//   try {
+//     int jasy = 14;
+//     jastekseru(jasy);
+//     print("Age checked");
+//   } catch (e) {
+//     print("error $e");
+//   }
+// }
+// void jastekseru(int jasy) {
+//   if (jasy <= 18) {
+//     print("You are a teenager yet");
+//   }
+//  }
+
+
+//- correct phone number entered
+// void main() {
+//   try {
+//     int phone_number = 87082211238;
+//     number_check(phone_number);
+//   } catch (e) {
+//     print("invalid phone number $e");
+//   }
+// }
+// void number_check(int number) {
+//     if (number == 87082211238) {
+//       print('Correct phone Number');
+//     } else {
+//       print('Invalid phone number');
+//     }
+  
+//   }
+
+
+//- correct email entered
+//   void main() {
+//   try {
+//     String mail = "jihc.kz";
+//     checkemail(mail);
+//   } catch (e) {
+//     print("Invalid email $e");
+//   }
+// }
+
+// void checkemail(String mail) {
+//   if (mail == "jihc.kz") {
+//     print('Correct email');
+//   } else {
+//     print('Invalid email');
+//   }
+// }
